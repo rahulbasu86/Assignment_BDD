@@ -38,8 +38,8 @@ public class LoginStepDefinition extends TestBase {
 	@When("^they provide the correct credentials$")
 	public void they_provide_the_correct_credentials() {
 
-		driver.findElement(By.name("username")).sendKeys("user@phptravels.com");
-		driver.findElement(By.name("password")).sendKeys("demouser");
+		driver.findElement(By.name("username")).sendKeys(prop.getProperty("Email"));
+		driver.findElement(By.name("password")).sendKeys(prop.getProperty("password"));
 
 	}
 
@@ -62,17 +62,18 @@ public class LoginStepDefinition extends TestBase {
 	@When("^they provide the incorrect password for their account$")
 	public void they_provide_the_incorrect_credentials() {
 
-		driver.findElement(By.name("username")).sendKeys("user@phptravels.com");
-		driver.findElement(By.name("password")).sendKeys("demouser1");
-
+		driver.findElement(By.name("username")).sendKeys(prop.getProperty("Email"));
+		driver.findElement(By.name("password")).sendKeys(prop.getProperty("invalid_password"));
+		
 	}
 
 	@Then("^an error will be provided stating \"([^\"]*)\"$")
-	public void an_error_will_be_provided_stating(String message) {
+	public void an_error_will_be_provided_stating(String message) throws InterruptedException {
 
 		driver.findElement(By.xpath("//button[starts-with(text(),'Login')]")).click();
 		String actualMessage = driver.findElement(By.xpath("//div[text()='Invalid Email or Password']")).getText();
 		Assert.assertEquals(actualMessage, message);
+		Thread.sleep(2000);
 
 	}
 

@@ -27,8 +27,8 @@ public class SearchStepDefinition extends TestBase {
 	@Given("^the userr is logged in$")
 	public void the_userr_is_logged_in() throws Throwable {
 
-		driver.findElement(By.name("username")).sendKeys("user@phptravels.com");
-		driver.findElement(By.name("password")).sendKeys("demouser");
+		driver.findElement(By.name("username")).sendKeys(prop.getProperty("Email"));
+		driver.findElement(By.name("password")).sendKeys(prop.getProperty("password"));
 		driver.findElement(By.xpath("//button[starts-with(text(),'Login')]")).click();
 
 	}

@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 7701086564,
+  "duration": 10366027383,
   "status": "passed"
 });
 formatter.scenario({
@@ -42,32 +42,40 @@ formatter.match({
   "location": "LoginStepDefinition.the_user_has_navigated_to_the_login_page()"
 });
 formatter.result({
-  "duration": 171772882,
+  "duration": 146637275,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.they_provide_the_correct_credentials()"
 });
 formatter.result({
-  "duration": 217844549,
+  "duration": 279470918,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.the_user_is_logged_in()"
 });
 formatter.result({
-  "duration": 84759362,
+  "duration": 111977158,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.they_will_be_directed_to_their_account_page()"
 });
 formatter.result({
-  "duration": 2498127010,
+  "duration": 2830968728,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 111386,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 283787809,
   "status": "passed"
 });
 formatter.before({
-  "duration": 7070476232,
+  "duration": 8823801848,
   "status": "passed"
 });
 formatter.scenario({
@@ -90,34 +98,43 @@ formatter.step({
 });
 formatter.step({
   "line": 22,
-  "name": "an error will be provided stating \"Invalid Email or Password\"",
+  "name": "an error will be provided stating \"Invvalid Email or Password\"",
   "keyword": "Then "
 });
 formatter.match({
   "location": "LoginStepDefinition.the_user_has_navigated_to_the_login_page()"
 });
 formatter.result({
-  "duration": 21065239,
+  "duration": 52174626,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.they_provide_the_incorrect_credentials()"
 });
 formatter.result({
-  "duration": 234800197,
+  "duration": 305332247,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Invalid Email or Password",
+      "val": "Invvalid Email or Password",
       "offset": 35
     }
   ],
   "location": "LoginStepDefinition.an_error_will_be_provided_stating(String)"
 });
 formatter.result({
-  "duration": 345952842,
+  "duration": 404072899,
+  "error_message": "org.junit.ComparisonFailure: expected:\u003cInv[]alid Email or Passwo...\u003e but was:\u003cInv[v]alid Email or Passwo...\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat stepDefinitions.LoginStepDefinition.an_error_will_be_provided_stating(LoginStepDefinition.java:75)\r\n\tat ✽.Then an error will be provided stating \"Invvalid Email or Password\"(login.feature:22)\r\n",
+  "status": "failed"
+});
+formatter.after({
+  "duration": 433050788,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 272964806,
   "status": "passed"
 });
 formatter.uri("search.feature");
@@ -214,7 +231,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 6752217061,
+  "duration": 8982281976,
   "status": "passed"
 });
 formatter.background({
@@ -233,7 +250,7 @@ formatter.match({
   "location": "SearchStepDefinition.the_userr_is_logged_in()"
 });
 formatter.result({
-  "duration": 361206356,
+  "duration": 373816139,
   "status": "passed"
 });
 formatter.scenario({
@@ -294,14 +311,14 @@ formatter.match({
   "location": "SearchStepDefinition.the_user_has_clicked_Home_to_access_the_search_page()"
 });
 formatter.result({
-  "duration": 4026670427,
+  "duration": 4783094758,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchStepDefinition.they_have_chosen_the_Hotels_option()"
 });
 formatter.result({
-  "duration": 56176865,
+  "duration": 102017683,
   "status": "passed"
 });
 formatter.match({
@@ -314,7 +331,7 @@ formatter.match({
   "location": "SearchStepDefinition.they_have_chosen_a_hotel_for_city(String)"
 });
 formatter.result({
-  "duration": 1000848802,
+  "duration": 1363410741,
   "status": "passed"
 });
 formatter.match({
@@ -331,7 +348,7 @@ formatter.match({
   "location": "SearchStepDefinition.they_have_chosen_with_dates_checkin_to_checkout(String,String)"
 });
 formatter.result({
-  "duration": 3973885372,
+  "duration": 4092550954,
   "status": "passed"
 });
 formatter.match({
@@ -348,25 +365,33 @@ formatter.match({
   "location": "SearchStepDefinition.they_have_selected_num_adults_num_children(String,String)"
 });
 formatter.result({
-  "duration": 359781744,
+  "duration": 312876331,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchStepDefinition.they_click_search()"
 });
 formatter.result({
-  "duration": 1268382621,
+  "duration": 1329883746,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchStepDefinition.matching_results_are_displayed()"
 });
 formatter.result({
-  "duration": 75894,
+  "duration": 67588,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 42667,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 268286945,
   "status": "passed"
 });
 formatter.before({
-  "duration": 6716567004,
+  "duration": 9797704151,
   "status": "passed"
 });
 formatter.background({
@@ -385,7 +410,7 @@ formatter.match({
   "location": "SearchStepDefinition.the_userr_is_logged_in()"
 });
 formatter.result({
-  "duration": 387607568,
+  "duration": 512371655,
   "status": "passed"
 });
 formatter.scenario({
@@ -446,14 +471,14 @@ formatter.match({
   "location": "SearchStepDefinition.the_user_has_clicked_Home_to_access_the_search_page()"
 });
 formatter.result({
-  "duration": 4624375340,
+  "duration": 6458231717,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchStepDefinition.they_have_chosen_the_Hotels_option()"
 });
 formatter.result({
-  "duration": 53593079,
+  "duration": 134108735,
   "status": "passed"
 });
 formatter.match({
@@ -466,7 +491,7 @@ formatter.match({
   "location": "SearchStepDefinition.they_have_chosen_a_hotel_for_city(String)"
 });
 formatter.result({
-  "duration": 984104976,
+  "duration": 1350597127,
   "status": "passed"
 });
 formatter.match({
@@ -483,7 +508,7 @@ formatter.match({
   "location": "SearchStepDefinition.they_have_chosen_with_dates_checkin_to_checkout(String,String)"
 });
 formatter.result({
-  "duration": 3665185039,
+  "duration": 3720634428,
   "status": "passed"
 });
 formatter.match({
@@ -500,21 +525,29 @@ formatter.match({
   "location": "SearchStepDefinition.they_have_selected_num_adults_num_children(String,String)"
 });
 formatter.result({
-  "duration": 573580513,
+  "duration": 635720443,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchStepDefinition.they_click_search()"
 });
 formatter.result({
-  "duration": 1226503612,
+  "duration": 1460974093,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchStepDefinition.matching_results_are_displayed()"
 });
 formatter.result({
-  "duration": 58903,
+  "duration": 74383,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 37003,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 318749616,
   "status": "passed"
 });
 });

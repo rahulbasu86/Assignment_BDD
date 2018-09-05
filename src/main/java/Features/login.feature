@@ -19,4 +19,4 @@ Feature:  Login
 
     When they provide the incorrect password for their account
 
-    Then an error will be provided stating "Invalid Email or Password"
+    Then an error will be provided stating "Invvalid Email or Password"
