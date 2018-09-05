@@ -1,0 +1,480 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7701086564,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Login",
+        "description": "",
+        "id": "login;login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 171772882,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user has navigated to the login page",
+            "match": {
+              "location": "LoginStepDefinition.the_user_has_navigated_to_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 217844549,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "they provide the correct credentials",
+            "match": {
+              "location": "LoginStepDefinition.they_provide_the_correct_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 84759362,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user is logged in",
+            "match": {
+              "location": "LoginStepDefinition.the_user_is_logged_in()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2498127010,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "they will be directed to their account page",
+            "match": {
+              "location": "LoginStepDefinition.they_will_be_directed_to_their_account_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7070476232,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Login - bad password",
+        "description": "",
+        "id": "login;login---bad-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 21065239,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user has navigated to the login page",
+            "match": {
+              "location": "LoginStepDefinition.the_user_has_navigated_to_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 234800197,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "they provide the incorrect password for their account",
+            "match": {
+              "location": "LoginStepDefinition.they_provide_the_incorrect_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 345952842,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "an error will be provided stating \"Invalid Email or Password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invalid Email or Password",
+                  "offset": 35
+                }
+              ],
+              "location": "LoginStepDefinition.an_error_will_be_provided_stating(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "login.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 361206356,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the userr is logged in",
+            "match": {
+              "location": "SearchStepDefinition.the_userr_is_logged_in()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6752217061,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Basic hotel search",
+        "description": "",
+        "id": "search;basic-hotel-search;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4026670427,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user has clicked Home to access the search page",
+            "match": {
+              "location": "SearchStepDefinition.the_user_has_clicked_Home_to_access_the_search_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 56176865,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "they have chosen the Hotels option",
+            "match": {
+              "location": "SearchStepDefinition.they_have_chosen_the_Hotels_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000848802,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "they have chosen a hotel for \"Montreal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Montreal",
+                  "offset": 30
+                }
+              ],
+              "location": "SearchStepDefinition.they_have_chosen_a_hotel_for_city(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3973885372,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "they have chosen with dates \"2018/22/11\" to \"2018/24/11\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2018/22/11",
+                  "offset": 29
+                },
+                {
+                  "val": "2018/24/11",
+                  "offset": 45
+                }
+              ],
+              "location": "SearchStepDefinition.they_have_chosen_with_dates_checkin_to_checkout(String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 359781744,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "they have selected \"1\", \"0\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 20
+                },
+                {
+                  "val": "0",
+                  "offset": 25
+                }
+              ],
+              "location": "SearchStepDefinition.they_have_selected_num_adults_num_children(String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1268382621,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "they click search",
+            "match": {
+              "location": "SearchStepDefinition.they_click_search()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 75894,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "matching results are displayed",
+            "match": {
+              "location": "SearchStepDefinition.matching_results_are_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 387607568,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the userr is logged in",
+            "match": {
+              "location": "SearchStepDefinition.the_userr_is_logged_in()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6716567004,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Basic hotel search",
+        "description": "",
+        "id": "search;basic-hotel-search;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4624375340,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user has clicked Home to access the search page",
+            "match": {
+              "location": "SearchStepDefinition.the_user_has_clicked_Home_to_access_the_search_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 53593079,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "they have chosen the Hotels option",
+            "match": {
+              "location": "SearchStepDefinition.they_have_chosen_the_Hotels_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 984104976,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "they have chosen a hotel for \"New York\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "New York",
+                  "offset": 30
+                }
+              ],
+              "location": "SearchStepDefinition.they_have_chosen_a_hotel_for_city(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3665185039,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "they have chosen with dates \"2018/11/11\" to \"2018/20/11\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2018/11/11",
+                  "offset": 29
+                },
+                {
+                  "val": "2018/20/11",
+                  "offset": 45
+                }
+              ],
+              "location": "SearchStepDefinition.they_have_chosen_with_dates_checkin_to_checkout(String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 573580513,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "they have selected \"5\", \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 20
+                },
+                {
+                  "val": "1",
+                  "offset": 25
+                }
+              ],
+              "location": "SearchStepDefinition.they_have_selected_num_adults_num_children(String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1226503612,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "they click search",
+            "match": {
+              "location": "SearchStepDefinition.they_click_search()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 58903,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "matching results are displayed",
+            "match": {
+              "location": "SearchStepDefinition.matching_results_are_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Search",
+    "description": "",
+    "id": "search",
+    "keyword": "Feature",
+    "uri": "search.feature"
+  }
+]

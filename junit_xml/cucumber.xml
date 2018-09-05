@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="54.376706">
+<testcase classname="Login" name="Login" time="10.67359">
+<system-out><![CDATA[Given the user has navigated to the login page..............................passed
+When they provide the correct credentials...................................passed
+Then the user is logged in..................................................passed
+And they will be directed to their account page.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Login - bad password" time="7.672295">
+<system-out><![CDATA[Given the user has navigated to the login page..............................passed
+When they provide the incorrect password for their account..................passed
+Then an error will be provided stating "Invalid Email or Password"..........passed
+]]></system-out>
+</testcase>
+<testcase classname="Search" name="Basic hotel search" time="17.799245">
+<system-out><![CDATA[Given the userr is logged in................................................passed
+Given the user has clicked Home to access the search page...................passed
+And they have chosen the Hotels option......................................passed
+And they have chosen a hotel for "Montreal".................................passed
+And they have chosen with dates "2018/22/11" to "2018/24/11"................passed
+And they have selected "1", "0".............................................passed
+When they click search......................................................passed
+Then matching results are displayed.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search" name="Basic hotel search 2" time="18.231576">
+<system-out><![CDATA[Given the userr is logged in................................................passed
+Given the user has clicked Home to access the search page...................passed
+And they have chosen the Hotels option......................................passed
+And they have chosen a hotel for "New York".................................passed
+And they have chosen with dates "2018/11/11" to "2018/20/11"................passed
+And they have selected "5", "1".............................................passed
+When they click search......................................................passed
+Then matching results are displayed.........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
